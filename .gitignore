@@ -1,0 +1,71 @@
+# --- Core ---
+.git/
+!.gitignore
+.vs/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+.venv*/
+.env
+.env.*
+!.env.example
+
+# --- Docker ---
+*.log
+docker-compose.override.yml
+*.local.yml
+**/.dockerignore
+
+# --- Airflow runtime ---
+airflow/airflow.cfg
+airflow/*.db
+airflow/airflow.db
+airflow/logs/
+airflow/tmp/
+airflow/.airflowenv
+airflow/.pytest_cache/
+airflow/.mypy_cache/
+airflow/.venv/
+logs/
+
+# --- Data & artifacts ---
+data/
+datasets/
+outputs/
+mlruns/
+models/
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.joblib
+*.pkl
+
+# --- Notebooks ---
+*.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# --- Terraform ---
+.terraform/
+.terraform.lock.hcl
+!terraform/.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.*
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+terraform/.terraform/
+terraform/*.tfvars
+terraform/*.tfvars.json
+
+# --- OS / misc ---
+*.swp
+*.bak
