@@ -1,5 +1,6 @@
 # Airbnb Los Angeles Data Engineering Capstone
 
+![Pipeline Diagram](images/pipeline_diagram.png)  
 \
 *(End-to-end architecture: Airflow orchestrates data movement, Terraform provisions AWS infra, MLflow tracks experiments, and Tableau visualizes results.)*
 
